@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100;700 & display=swap');
+
+
+body{
+    background-color: rgb(238, 238, 238);
+    height: 1350px;
+    margin: 0;
+}
+
+form
+{
+    background-image: linear-gradient(rgb(235, 235, 235),rgb(233, 233, 233));
+    margin-top: 10px;
+    box-shadow: 0 0 1em rgba(123, 123, 123, 0.246);
+}
+.corTxt{
+    color: rgb(255, 4, 79);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.oculta{
+    display: none;
+}
+
+.b{
+    background-color: #ebebeb;
+    border-radius: 20px;
+}
+.c{
+    padding: 20px;
+}
+.container img { 
+    max-width: 200px;
+    
+ }
+
+.title {
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(0, 60, 255);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.center {
+    text-align: center;
+}
+
+
+
+.btoPesquisar {
+    margin-top: 25px;
+    color: #090909;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #00ff66;
+    border: 1px solid #00ff66;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+
+.btoPesquisar,
+.btoPesquisar::after {
+
+
+    padding: 16px 20px;
+    font-size: 18px;
+    background: linear-gradient(45deg, transparent 5%, #ff0073 5%);
+    border: 0;
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+    border-radius: 30px;
+    line-height: 1;
+    box-shadow: 6px 0px 0px #68002b;
+    outline: transparent;
+    position: relative;
+    }
+.btoPesquisar::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #0126f5 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+.btoPesquisar:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+   
+   @keyframes glitch {
+    0% {
+     clip-path: var(--slice-1);
+     transform: translate(-20px, -10px);
+    }
+   
+    10% {
+     clip-path: var(--slice-3);
+     transform: translate(10px, 10px);
+    }
+   
+    20% {
+     clip-path: var(--slice-1);
+     transform: translate(-10px, 10px);
+    }
+   
+    30% {
+     clip-path: var(--slice-3);
+     transform: translate(0px, 5px);
+    }
+   
+    40% {
+     clip-path: var(--slice-2);
+     transform: translate(-5px, 0px);
+    }
+   
+    50% {
+     clip-path: var(--slice-3);
+     transform: translate(5px, 0px);
+    }
+   
+    60% {
+     clip-path: var(--slice-4);
+     transform: translate(5px, 10px);
+    }
+   
+    70% {
+     clip-path: var(--slice-2);
+     transform: translate(-10px, 10px);
+    }
+   
+    80% {
+     clip-path: var(--slice-5);
+     transform: translate(20px, -10px);
+    }
+   
+    90% {
+     clip-path: var(--slice-1);
+     transform: translate(-10px, 0px);
+    }
+   
+    100% {
+     clip-path: var(--slice-1);
+     transform: translate(0);
+    }
+   }
+.btoPesquisar:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+}
+
+
+/* BOTÃO DE CADASTRAR */
+.btoCadastrar {
+    color: #090909;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #00ff66;
+    border: 1px solid #00ff66;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+
+.separador{
+    padding: 10px;
+}
+
+.btoCadastrar,
+.btoCadastrar::after {
+ padding: 16px 20px;
+ text-transform: uppercase;
+ font-size: 16px;
+ font-weight: 800;
+ background: linear-gradient(45deg, transparent 5%, #7cff01 5%);
+ border: 0;
+ color: rgb(82, 0, 31);
+ line-height: 1;
+ box-shadow: 6px 0px 0px #02970e;
+ outline: transparent;
+ position: relative;
+}
+.btoCadastrar::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #5eff00 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+.btoCadastrar:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+   
+   @keyframes glitch {
+    0% {
+     clip-path: var(--slice-1);
+     transform: translate(-20px, -10px);
+    }
+   
+    10% {
+     clip-path: var(--slice-3);
+     transform: translate(10px, 10px);
+    }
+   
+    20% {
+     clip-path: var(--slice-1);
+     transform: translate(-10px, 10px);
+    }
+   
+    30% {
+     clip-path: var(--slice-3);
+     transform: translate(0px, 5px);
+    }
+   
+    40% {
+     clip-path: var(--slice-2);
+     transform: translate(-5px, 0px);
+    }
+   
+    50% {
+     clip-path: var(--slice-3);
+     transform: translate(5px, 0px);
+    }
+   
+    60% {
+     clip-path: var(--slice-4);
+     transform: translate(5px, 10px);
+    }
+   
+    70% {
+     clip-path: var(--slice-2);
+     transform: translate(-10px, 10px);
+    }
+   
+    80% {
+     clip-path: var(--slice-5);
+     transform: translate(20px, -10px);
+    }
+   
+    90% {
+     clip-path: var(--slice-1);
+     transform: translate(-10px, 0px);
+    }
+   
+    100% {
+     clip-path: var(--slice-1);
+     transform: translate(0);
+    }
+   }
+.btoCadastrar:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+}
+
+/* BOTÃO DE ALTERAR */ 
+.btoAlterar {
+    color: #090909;
+    font-weight: bold;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #baff25;
+    border: 1px solid #baff25;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+
+.btoAlterar,
+.btoAlterar::after {
+ padding: 16px 20px;
+ text-transform: uppercase;
+ font-size: 16px;
+ font-weight: 800;
+ background: linear-gradient(45deg, transparent 5%, rgba(255, 4, 79, 0.911)5%);
+ border: 0;
+ color: rgb(255, 255, 255);
+ line-height: 1;
+ box-shadow: 6px 0px 0px rgba(91, 0, 27, 0.911);
+ outline: transparent;
+ position: relative;
+}
+.btoAlterar::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #0167ff 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+.btoAlterar:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+} 
+@keyframes glitch {
+    0% {
+     clip-path: var(--slice-1);
+     transform: translate(-20px, -10px);
+    }
+   
+    10% {
+     clip-path: var(--slice-3);
+     transform: translate(10px, 10px);
+    }
+   
+    20% {
+     clip-path: var(--slice-1);
+     transform: translate(-10px, 10px);
+    }
+   
+    30% {
+     clip-path: var(--slice-3);
+     transform: translate(0px, 5px);
+    }
+   
+    40% {
+     clip-path: var(--slice-2);
+     transform: translate(-5px, 0px);
+    }
+   
+    50% {
+     clip-path: var(--slice-3);
+     transform: translate(5px, 0px);
+    }
+   
+    60% {
+     clip-path: var(--slice-4);
+     transform: translate(5px, 10px);
+    }
+   
+    70% {
+     clip-path: var(--slice-2);
+     transform: translate(-10px, 10px);
+    }
+   
+    80% {
+     clip-path: var(--slice-5);
+     transform: translate(20px, -10px);
+    }
+   
+    90% {
+     clip-path: var(--slice-1);
+     transform: translate(-10px, 0px);
+    }
+   
+    100% {
+     clip-path: var(--slice-1);
+     transform: translate(0);
+    }
+}
+.btoAlterar:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+}
+   
+/* BOTÃO DE LIMPAR */ 
+.btoLimpar {
+    color: #090909;
+    font-weight: bold;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #ff7745;
+    border: 1px solid #ff7745;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+   
+.btoLimpar,
+.btoLimpar::after {
+ padding: 16px 20px;
+ text-transform: uppercase;
+ font-size: 16px;
+ font-weight: 800;
+ background: linear-gradient(45deg, transparent 5%, rgba(255, 4, 79, 0.911) 5%);
+ border: 0;
+ color: rgb(255, 255, 255);
+ line-height: 1;
+ box-shadow: 6px 0px 0px rgba(91, 0, 27, 0.911);
+ outline: transparent;
+ position: relative;
+}
+.btoLimpar::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #0167ff 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+.btoLimpar:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+} 
+@keyframes glitch {
+    0% {
+     clip-path: var(--slice-1);
+     transform: translate(-20px, -10px);
+    }
+   
+    10% {
+     clip-path: var(--slice-3);
+     transform: translate(10px, 10px);
+    }
+   
+    20% {
+     clip-path: var(--slice-1);
+     transform: translate(-10px, 10px);
+    }
+   
+    30% {
+     clip-path: var(--slice-3);
+     transform: translate(0px, 5px);
+    }
+   
+    40% {
+     clip-path: var(--slice-2);
+     transform: translate(-5px, 0px);
+    }
+   
+    50% {
+     clip-path: var(--slice-3);
+     transform: translate(5px, 0px);
+    }
+   
+    60% {
+     clip-path: var(--slice-4);
+     transform: translate(5px, 10px);
+    }
+   
+    70% {
+     clip-path: var(--slice-2);
+     transform: translate(-10px, 10px);
+    }
+   
+    80% {
+     clip-path: var(--slice-5);
+     transform: translate(20px, -10px);
+    }
+   
+    90% {
+     clip-path: var(--slice-1);
+     transform: translate(-10px, 0px);
+    }
+   
+    100% {
+     clip-path: var(--slice-1);
+     transform: translate(0);
+    }
+} 
+.btoLimpar:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+}
+
+/* BOTÃO DE EXCLUIR */ 
+   .btoExcluir {
+    color: #090909;
+    font-weight: bold;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #ff0000;
+    border: 1px solid #ff0000;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+
+   .btoExcluir,
+   .btoExcluir::after {
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    background: linear-gradient(45deg, transparent 5%, #ff0000 5%);
+    border: 0;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    box-shadow: 6px 0px 0px #4b0303;
+    outline: transparent;
+    position: relative;
+   }
+   .btoExcluir::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: "HOVER ME";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #941414 5%);
+    text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+    clip-path: var(--slice-0);
+   }
+   .btoExcluir:hover::after {
+       animation: 1s glitch;
+       animation-timing-function: steps(2, end);
+   } 
+   @keyframes glitch {
+       0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+       }
+      
+       10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+       }
+      
+       20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+       }
+      
+       30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+       }
+      
+       40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+       }
+      
+       50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+       }
+      
+       60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+       }
+      
+       70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+       }
+      
+       80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+       }
+      
+       90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+       }
+      
+       100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+       }
+   }
+   
+    .btoExcluir:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+   }
+
+   html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+
+/* BACKGROUND PRINCIPAL*/
+
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(82, 186, 255) 50%, rgb(0, 17, 255) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
